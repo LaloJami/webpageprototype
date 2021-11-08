@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@mediapipe/camera_utils": "^0.3.1632432234",
+    "@mediapipe/control_utils": "^0.6.1629159505",
+    "@mediapipe/drawing_utils": "^0.3.1620248257",
+    "@mediapipe/hands": "^0.4.1635986972",
     "@tensorflow-models/handpose": "0.0.6",
     "@tensorflow/tfjs": "^2.4.0",
     "@testing-library/jest-dom": "^4.2.4",

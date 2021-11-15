@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {drawConnectors, drawLandmarks} from '@mediapipe/drawing_utils';
 import {HAND_CONNECTIONS, Hands} from '@mediapipe/hands';
 import {Camera} from '@mediapipe/camera_utils';
+import * as tf from '@tensorflow/tfjs'
 import Webcam from 'react-webcam';
 import '../styles/components/Video.css'
 
@@ -9,6 +10,8 @@ const Video = () => {
   const webcamRef = React.useRef(null);
   const canvasReference = React.useRef(null);
   const [cameraReady, setCameraReady] = useState(false);
+
+  // const model = await tf.loadLayersModel('https://foo.bar/model.json');
   
   function onResults(results) {
     canvasReference.current.width = webcamRef.current.video.videoWidth;

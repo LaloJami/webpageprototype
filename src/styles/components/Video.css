@@ -1,0 +1,6 @@
+.Video{
+  position: relative;
+}
+.Video .output_video{
+  position: absolute;
+}
